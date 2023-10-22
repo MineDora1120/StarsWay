@@ -41,7 +41,7 @@ public class BackGroundManager : MonoBehaviour
 
         while (true)
         {
-            for(float i = 0; i < 1f; i += 0.05f)
+            for(float i = 0.1f; i < 1f; i += Time.deltaTime)
             {
                 StarColor.a = i;
                 StarRender.color = StarColor;
@@ -50,7 +50,7 @@ public class BackGroundManager : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
 
-            for (float i = 1f; i > 0; i -= 0.05f)
+            for (float i = 1f; i > 0.1f; i -= Time.deltaTime)
             {
                 StarColor.a = i;
                 StarRender.color = StarColor;

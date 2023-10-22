@@ -20,7 +20,7 @@ public class Fade : MonoBehaviour
     {
         BlackScreenColor.a = 0;
         BlackScreenRenderer.enabled = true;
-        for (float i = 0; i < 1f; i += 0.01f)
+        for (float i = 0; i < 1f; i += Time.deltaTime)
         {
             BlackScreenColor.a = i;
             BlackScreenRenderer.color = BlackScreenColor;
@@ -30,7 +30,7 @@ public class Fade : MonoBehaviour
 
     static public IEnumerator FadeIn()
     {
-        for (float i = 1f; i > 0; i -= 0.01f)
+        for (float i = 1f; i > 0; i -= Time.deltaTime)
         {
             BlackScreenColor.a = i;
             BlackScreenRenderer.color = BlackScreenColor;
