@@ -301,6 +301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760475315}
   - component: {fileID: 760475316}
+  - component: {fileID: 760475317}
   m_Layer: 0
   m_Name: GameManage
   m_TagString: Untagged
@@ -336,9 +337,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 0.1
-  StarChange: 0.3
+  StarChange: 0.1
   Background: {fileID: 1700965440}
   Stars: {fileID: 418468052}
+--- !u!114 &760475317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760475313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb0b181191afae4196156c670853466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &860919041
 GameObject:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class BackGroundManager : MonoBehaviour
        Stars.transform.position = new Vector2(0, 0);
 
        StarColor = StarRender.color;
-       StarColor.a = 0;
+       StarColor.a = 0.1f;
        StarRender.color = StarColor;
 
        StartCoroutine(Invision());
