@@ -27,7 +27,6 @@ public class Fade : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
     }
-
     static public IEnumerator FadeIn()
     {
         for (float i = 1f; i > 0; i -= Time.deltaTime)
@@ -37,5 +36,10 @@ public class Fade : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
         BlackScreenRenderer.enabled = false;
+    }
+
+    private void Update()
+    {
+        
     }
 }
