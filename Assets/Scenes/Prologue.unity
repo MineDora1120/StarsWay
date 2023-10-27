@@ -556,6 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterDelay: 0.05
+  AfterDelay: 2
 --- !u!1 &1700965440
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,7 +724,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9184741482425370178, guid: 4f77ac689913fd34f8bac65b274f4cfe, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9184741482425370179, guid: 4f77ac689913fd34f8bac65b274f4cfe, type: 3}
       propertyPath: m_RootOrder
