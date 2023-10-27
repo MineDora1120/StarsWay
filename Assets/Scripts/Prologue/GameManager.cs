@@ -6,7 +6,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    float startTime;
     public float delayTime = 5f;
     void Start()
     {
