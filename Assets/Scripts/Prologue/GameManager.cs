@@ -10,8 +10,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 60;
-
-        StartCoroutine(Fade.FadeIn(delayTime));
     }
 
     // Update is called once per frame

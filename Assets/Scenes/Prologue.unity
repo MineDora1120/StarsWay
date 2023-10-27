@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb0b181191afae4196156c670853466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 5
+  delayTime: 0
 --- !u!1 &860919041
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +441,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 128
   m_TargetDisplay: 0
 --- !u!224 &860919045
 RectTransform:
@@ -472,6 +472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215374374}
+  - component: {fileID: 1215374377}
   - component: {fileID: 1215374376}
   - component: {fileID: 1215374375}
   m_Layer: 5
@@ -533,7 +534,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: '`'
 --- !u!222 &1215374376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -542,6 +543,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215374373}
   m_CullTransparentMesh: 1
+--- !u!114 &1215374377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215374373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b897174067c84ce44beb04675edd5741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  letterDelay: 0.05
 --- !u!1 &1700965440
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +720,10 @@ PrefabInstance:
     - target: {fileID: 9184741482425370176, guid: 4f77ac689913fd34f8bac65b274f4cfe, type: 3}
       propertyPath: m_Name
       value: BlackScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184741482425370178, guid: 4f77ac689913fd34f8bac65b274f4cfe, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9184741482425370179, guid: 4f77ac689913fd34f8bac65b274f4cfe, type: 3}
       propertyPath: m_RootOrder

@@ -4,17 +4,28 @@ using UnityEngine.UI;
 
 public class TextTyping : MonoBehaviour
 {
-    public Text textObject;
-    public string fullText;
     public float letterDelay = 0.1f;
+    Text textObject;
+    string[] texts = new string[] { "평화롭던 어느날...", "이상현은 도트르ㅜㄹ 존나잘짠다" };
 
     private void Start()
     {
-        StartCoroutine(ShowText());
+        textObject = GetComponent<Text>();
+        StartCoroutine(Printf(2, 0.1f));
     }
 
-    IEnumerator ShowText()
+    IEnumerator Printf(float After, float Before) //텍스트, 지연시간, 텍스트 오브젝트
     {
+        for(int i = 0; i < texts.Length; i++)
+        {
+            StartCoroutine(ShowText(texts[i], Before));
+            yield return new WaitForSeconds(After);
+        }
+    }
+
+    IEnumerator ShowText(string fullText, float letterDelay) //텍스트, 지연시간, 텍스트 오브젝트
+    {
+        textObject.text = "";
         for (int i = 0; i <= fullText.Length; i++)
         {
             textObject.text = fullText.Substring(0, i);
