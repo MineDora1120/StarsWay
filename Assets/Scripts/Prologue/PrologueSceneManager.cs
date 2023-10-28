@@ -6,9 +6,13 @@ using UnityEngine;
 public class PrologueSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float delayTime = 5f;
+    public float letterDelay = 0.1f, AfterDelay = 2;
+    TextTyping TextFunction;
+    string[] texts = new string[] { "평화롭던 어느날...", "이상현은 도트르ㅜㄹ 존나잘짠다" };
     void Start()
     {
+        TextFunction = FindObjectOfType<TextTyping>();
+        StartCoroutine(TextFunction.Printf(AfterDelay, letterDelay, texts));
         Application.targetFrameRate = 60;
     }
 
