@@ -21,6 +21,9 @@ public class TextTyping : MonoBehaviour
             StartCoroutine(ShowText(texts[i], Before));
             yield return new WaitForSeconds(After);
         }
+        yield return new WaitForSeconds(After);
+        StartCoroutine(Fade.FadeIn(0));
+        textObject.enabled = false;
     }
 
     IEnumerator ShowText(string fullText, float letterDelay) //텍스트, 지연시간, 텍스트 오브젝트

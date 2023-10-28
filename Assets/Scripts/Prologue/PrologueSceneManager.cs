@@ -6,7 +6,6 @@ using UnityEngine;
 public class PrologueSceneManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float delayTime = 5f;
     void Start()
     {
         Application.targetFrameRate = 60;
