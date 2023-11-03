@@ -6,7 +6,7 @@ public class TextTyping : MonoBehaviour
 {
     public float letterDelay = 0.1f, AfterDelay = 2;
     Text textObject;
-    string[] texts = new string[] { "평화롭던 어느날...", "이상현은 도트르ㅜㄹ 존나잘짠다" };
+    public string[] texts = new string[] { "에" };
 
     private void Start()
     {

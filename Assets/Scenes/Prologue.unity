@@ -360,7 +360,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cb0b181191afae4196156c670853466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayTime: 0
 --- !u!1 &860919041
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,7 +521,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 61038b22c6b5e8c4889f67da5102ca11, type: 3}
     m_FontSize: 155
     m_FontStyle: 0
     m_BestFit: 0
@@ -534,7 +533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '`'
+  m_Text: 
 --- !u!222 &1215374376
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -557,6 +556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterDelay: 0.05
   AfterDelay: 2
+  texts:
+  - "\uD3C9\uD654\uB86D\uB358 \uC5B4\uB290\uB0A0..."
+  - "\uC5D0\uC5D1\uB530"
+  - "\uC73C\uC5D1\uB530!!!!"
 --- !u!1 &1700965440
 GameObject:
   m_ObjectHideFlags: 0
