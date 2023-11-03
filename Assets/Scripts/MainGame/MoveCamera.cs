@@ -15,6 +15,7 @@ public class MoveCamera : MonoBehaviour
     void Update()
     {
         if (playerObj.transform.position.x >= -16.4f && playerObj.transform.position.x <= 16.4f) transform.position = new Vector3(playerObj.transform.position.x, transform.position.y, -10);
-        //if (playerObj.transform.position.y > -5f) transform.position = new Vector3(transform.position.x, playerObj.transform.position.y + 1.36f, -10);
+        if (playerObj.transform.position.y >= -5.72f) transform.position = new Vector3(transform.position.x, playerObj.transform.position.y, -10);
+        else transform.position = new Vector3(transform.position.x, -5.72f, -10);
     }
 }

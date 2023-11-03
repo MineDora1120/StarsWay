@@ -25,12 +25,12 @@ public class MovePlayer : MonoBehaviour
             isGround = false;
             rb.AddForce(Vector2.up * moveSpeed, ForceMode2D.Impulse);
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && transform.position.x >= -19.96f)
         {
             transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
             playerSprite.flipX = true;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) && transform.position.x <= 19.96f)
         {
             transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
             playerSprite.flipX = false;
