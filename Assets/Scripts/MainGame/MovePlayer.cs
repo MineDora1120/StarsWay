@@ -50,7 +50,7 @@ public class MovePlayer : MonoBehaviour
                 playerAnimator.runtimeAnimatorController = idle;
             }
             if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A)) playerAnimator.runtimeAnimatorController = run;
-            if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) playerAnimator.runtimeAnimatorController = idle;
+            if ((Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A)) || (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))) playerAnimator.runtimeAnimatorController = idle;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
