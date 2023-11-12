@@ -29,13 +29,13 @@ public class MenuManager : MonoBehaviour
     public void OnClickOkayButton()
     {
         StartCoroutine(Fade.FadeOut(0f));
-        Invoke("UIOne", 1.5f);
+        Invoke("UIOne", 2f);
         StartCoroutine(Fade.FadeIn(2.5f));
     }
     public void OnClickCancelButton()
     {
         StartCoroutine(Fade.FadeOut(0f));
-        Invoke("UITwo", 1.5f);
+        Invoke("UITwo", 2f);
         StartCoroutine(Fade.FadeIn(2.5f));
     }
 
