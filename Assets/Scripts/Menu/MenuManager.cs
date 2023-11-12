@@ -5,6 +5,8 @@ using UnityEngine;
 public class MenuManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public static int starNum = 1;
+    public static int starSet = 1;
     void Start()
     {
         Application.targetFrameRate = 60;
