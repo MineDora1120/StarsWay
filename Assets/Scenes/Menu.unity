@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c30fc6ac667a24aba49caf340dd655, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 0.5
-  StarChange: 0.1
+  MoveSpeed: 0.1
+  StarChange: 0.01
   Background: {fileID: 565431661}
   Stars: {fileID: 1396453120}
 --- !u!4 &292946775
