@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    float moveSpeed = 5f;
+    static public float moveSpeed = 5f;
     Animator playerAnimator;
     SpriteRenderer playerSprite;
     public RuntimeAnimatorController idle, run, jump;
@@ -20,7 +20,7 @@ public class MovePlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && isGround)
+        if (Input.GetKeyDown(KeyCode.Space) && isGround)
         {
             isGround = false;
             rb.AddForce(Vector2.up * moveSpeed, ForceMode2D.Impulse);
