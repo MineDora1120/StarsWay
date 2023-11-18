@@ -8,11 +8,12 @@ public class MonsterBody : MonoBehaviour
     Monster monsterMain;
     public bool killed = false;
     item_5 itemInfo;
-    public GameObject player;
+    private GameObject player;
     private Rigidbody2D rb;
 
     private void Start()
     {
+        player = GameObject.Find("Player");
         itemInfo = FindObjectOfType<item_5>();
         rb = player.GetComponent<Rigidbody2D>();
         monsterMain = FindObjectOfType<Monster>();

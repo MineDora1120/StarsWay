@@ -2,26 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class item_4 : MonoBehaviour
+public class DestroyDirt : MonoBehaviour
 {
-
     private GameObject player;
     private Rigidbody2D rb;
-
+    item_12 itemInfo;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
         rb = player.GetComponent<Rigidbody2D>();
+        itemInfo = FindObjectOfType<item_12>();
     }
-    
+
     // Update is called once per frame
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if(collision.CompareTag("Player") && rb.velocity.y > 0f)
         {
-            rb.velocity = Vector2.zero;
-            rb.AddForce((Vector2.up * MovePlayer.moveSpeed)*1.1f, ForceMode2D.Impulse);
+            StartCoroutine(itemInfo.FadeIn(0f));
         }
     }
 }
