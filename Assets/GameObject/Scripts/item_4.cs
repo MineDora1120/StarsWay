@@ -20,7 +20,7 @@ public class item_4 : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             rb.velocity = Vector2.zero;
-            rb.AddForce((Vector2.up * MovePlayer.moveSpeed)*1.5f, ForceMode2D.Impulse);
+            rb.AddForce((Vector2.up * MovePlayer.moveSpeed)*1.1f, ForceMode2D.Impulse);
         }
     }
 }
