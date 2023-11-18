@@ -17,7 +17,7 @@ public class item_2 : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             spr.enabled = false;
-            MenuManager.fragNum[MenuManager.starSet - 1, MenuManager.starNum - 1]++;
+            MenuManager.fragNum[MenuManager.starSet - 1, MenuManager.starNum - 1] = 1;
         }
     }
 }

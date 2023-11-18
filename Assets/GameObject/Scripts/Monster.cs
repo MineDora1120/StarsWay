@@ -65,7 +65,7 @@ public class Monster : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && rb.velocity.y < -0.3f)
+        if (collision.CompareTag("Player") && rb.velocity.y < 0f)
         {
             Debug.Log(rb.velocity.y);
             killed = true;
