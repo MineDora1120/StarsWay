@@ -1,30 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Monster : MonoBehaviour
 {
-    private float moveRadius = 1f, moveSpeed = 2f, timer = 0;
+    private float moveRadius = 2f, moveSpeed = 5f, timer = 0;
     private float[] mainPosition = new float[2];
     private SpriteRenderer monsterSprite;
     private Animator monsterAnime;
     private Color monsterColor;
-    MonsterBody monsterBody;
-    bool direction = true; //¿ÞÂÊ
+    item_5 itemInfo;
+    public GameObject player;
+    private Rigidbody2D rb;
+    protected bool killed = false;
+    protected bool direction = true; //¿ÞÂÊ
     // Start is called before the first frame update
     void Start()
     {
+        itemInfo = FindObjectOfType<item_5>();
+        player = GameObject.Find("Player");
+        rb = player.GetComponent<Rigidbody2D>();
+        killed = false;
         mainPosition[0] = transform.position.x;
         mainPosition[1] = transform.position.y;
         monsterSprite = GetComponent<SpriteRenderer>();
         monsterAnime = GetComponent<Animator>();
-        monsterBody = FindObjectOfType<MonsterBody>();
-    }
+}
 
     // Update is called once per frame
     private void FixedUpdate()
     {
-         if(timer > 0.1f && !monsterBody.killed)
+         if(timer > 0.1f && !killed)
         {
             timer = 0;
             if (direction)
@@ -54,5 +61,17 @@ public class Monster : MonoBehaviour
         }
         monsterSprite.enabled = false;
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && rb.velocity.y < -0.3f)
+        {
+            Debug.Log(rb.velocity.y);
+            killed = true;
+            StartCoroutine(FadeIn(0f));
+        }
+        else if (collision.CompareTag("Player") && !killed && !itemInfo.grass) SceneManager.LoadScene("Main");
+        
     }
 }
