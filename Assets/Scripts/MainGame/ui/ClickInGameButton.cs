@@ -8,6 +8,7 @@ public class ClickInGameButton : MonoBehaviour
 {
     public Button stopButton, reGameButton, MenuButton, retryButton;
     public GameObject Menu;
+    public Text levelText;
     public Image stopButtonImage;
     public Sprite playImage, stopImage;
     private bool isStop = false, isReButton, isMenuButton;
@@ -21,14 +22,17 @@ public class ClickInGameButton : MonoBehaviour
         reGameButton.onClick.AddListener(ClickReGameButton);
         MenuButton.onClick.AddListener(ClickMenuButton);
         retryButton.onClick.AddListener(ClickRetryButton);
+        levelText.text = MenuManager.starSet.ToString() + "-" + MenuManager.starNum.ToString() + " 플레이중";
     }
     private void FixedUpdate()
     {
+        if (isStop && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))) ClickStopButton();
         Menu.SetActive(isStop);
     }
     // Update is called once per frame
     public void ClickStopButton()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) return;
         if (isStop)
         {
             isStop = false;
