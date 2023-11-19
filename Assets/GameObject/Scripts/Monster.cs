@@ -10,7 +10,7 @@ public class Monster : MonoBehaviour
     private SpriteRenderer monsterSprite;
     private Animator monsterAnime;
     private Color monsterColor;
-    item_5 itemInfo;
+    MovePlayer itemInfo;
     public GameObject player;
     private Rigidbody2D rb;
     protected bool killed = false;
@@ -18,7 +18,7 @@ public class Monster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        itemInfo = FindObjectOfType<item_5>();
+        itemInfo = FindObjectOfType<MovePlayer>();
         player = GameObject.Find("Player");
         rb = player.GetComponent<Rigidbody2D>();
         killed = false;
@@ -71,7 +71,10 @@ public class Monster : MonoBehaviour
             killed = true;
             StartCoroutine(FadeIn(0f));
         }
-        else if (collision.CompareTag("Player") && !killed && !itemInfo.grass) SceneManager.LoadScene("Main");
+        else if (collision.CompareTag("Player") && !killed && !itemInfo.grass)
+        {
+            SceneManager.LoadScene("Main");
+        }
         
     }
 }

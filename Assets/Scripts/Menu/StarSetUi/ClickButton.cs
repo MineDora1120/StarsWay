@@ -35,8 +35,6 @@ public class ClickButton : MonoBehaviour
             rightSpr.color = Color.green;
             if (MenuManager.starSet < 5) MenuManager.starSet++;
         }
-        
-        Debug.Log(MenuManager.starSet);
     }
     private void OnMouseUp()
     {

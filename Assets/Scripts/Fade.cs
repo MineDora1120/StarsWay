@@ -19,9 +19,9 @@ public class Fade : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
         BlackScreenColor.a = 0;     
-        BlackScreenRenderer.enabled = true;
         for (float i = 0; i < 1f; i += Time.deltaTime)
         {
+            BlackScreenRenderer.enabled = true;
             BlackScreenColor.a = i;
             BlackScreenRenderer.color = BlackScreenColor;
             yield return new WaitForSeconds(0.01f);
@@ -33,6 +33,7 @@ public class Fade : MonoBehaviour
         for (float i = 1f; i > 0; i -= Time.deltaTime)
         {
             BlackScreenColor.a = i;
+            BlackScreenRenderer.enabled = true;
             BlackScreenRenderer.color = BlackScreenColor;
             yield return new WaitForSeconds(0.01f);
         }

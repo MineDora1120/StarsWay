@@ -1,22 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
-    private bool clickOkayButton = false, clickCancelButton = false, menuBackButton = false;
+    private bool clickOkayButton = false, clickCancelButton = false, menuBackButton = false, startClickButton = false;
     public Button okayButton, cancelButton, startButton, backButton;
     // Start is called before the first frame update
     public static int starNum = 3;
-    public static int starSet = 3;
+    public static int starSet = 4;
     public static int pendants = 0;
-    public static int[,] clearData = new int[5, 3] { { 1, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }};
+    public static int[,] clearData = new int[5, 3] { { 1, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
     public static int[,] fragNum = new int[5, 3];
     public GameObject starSetUI, uiSet, starSelUI, uiSel;
     void Start()
     {
+        clickOkayButton = false;
+        clickCancelButton = false;
+        menuBackButton = false;
+        startClickButton = false;
+
         starSetUI.SetActive(true);
         uiSet.SetActive(true);
         starSelUI.SetActive(false);
@@ -27,6 +30,7 @@ public class MenuManager : MonoBehaviour
         okayButton.onClick.AddListener(OnClickOkayButton);
         cancelButton.onClick.AddListener(OnClickCancelButton);
         backButton.onClick.AddListener(OnClickBackButton);
+        startButton.onClick.AddListener(OnClickStartButton);
         StartCoroutine(Fade.FadeIn(0f));
     }
 
@@ -40,9 +44,19 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    public void OnClickStartButton()
+    {
+        if (startClickButton == false)
+        {
+            startClickButton = true;
+            StartCoroutine(Fade.FadeOut(0f));
+            Invoke("UIFour", 3f);
+        }
+    }
+
     public void OnClickOkayButton()
     {
-        if(clickOkayButton == false)
+        if (clickOkayButton == false)
         {
             clickOkayButton = true;
             StartCoroutine(Fade.FadeOut(0f));
@@ -52,7 +66,7 @@ public class MenuManager : MonoBehaviour
     }
     public void OnClickCancelButton()
     {
-        if(clickCancelButton == false)
+        if (clickCancelButton == false)
         {
             clickCancelButton = true;
             StartCoroutine(Fade.FadeOut(0f));
@@ -83,9 +97,14 @@ public class MenuManager : MonoBehaviour
         menuBackButton = false;
         SceneManager.LoadScene("Menu");
     }
+    void UIFour()
+    {
+        menuBackButton = false;
+        SceneManager.LoadScene("Main");
+    }
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

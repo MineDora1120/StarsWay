@@ -9,6 +9,7 @@ public class MovePlayer : MonoBehaviour
     public RuntimeAnimatorController idle, run, jump;
     Rigidbody2D rb;
     bool isGround = true;
+    public bool grass;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +58,15 @@ public class MovePlayer : MonoBehaviour
     {
         // 땅에 닿았을 때 점프 상태를 초기화합니다.
         if (collision.gameObject.CompareTag("Ground")) isGround = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 땅에 닿았을 때 점프 상태를 초기화합니다.
+        if (collision.gameObject.CompareTag("Grass")) grass = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        // 땅에 닿았을 때 점프 상태를 초기화합니다.
+        if (collision.gameObject.CompareTag("Grass")) grass = false;
     }
 }
