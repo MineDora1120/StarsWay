@@ -2537,7 +2537,445 @@ new List<float> { 5.085f , -2.394724f , 0f },
 
                     },
             }
-         }
+         },
+        new List<List<List<List<float>>>> //별자리 1
+        {
+            new List<List<List<float>>>  //배열 스테이지 (1)
+            {
+               new List<List<float>>   //아이템 코드 (0)
+                    {
+new List<float> { -4.756769f , 0.6841141f , 0f },
+new List<float> { -3.832823f , 0f , 180f },
+new List<float> { -1.665161f , 1.437216f , 0f },
+new List<float> { -11.33459f , -7.274414f , 0f },
+new List<float> { -11.81873f , -7.274414f , 0f },
+new List<float> { -10.35193f , -7.29f , 0f },
+new List<float> { -10.85045f , -7.291109f , 0f },
+new List<float> { -10.38f , 0.79f , 0f },
+new List<float> { -10.82624f , 0.7744991f , 0f },
+new List<float> { -3.345823f , 0f , 180f },
+new List<float> { -2.839823f , 0f , 180f },
+new List<float> { -7.960267f , 0.7673211f , 0f },
+new List<float> { -6.899371f , 0.7673211f , 0f },
+new List<float> { -8.79703f , -7.307803f , 0f },
+new List<float> { -7.800888f , -7.307803f , 0f },
+new List<float> { -8.312891f , -7.291109f , 0f },
+new List<float> { -9.347948f , -7.307803f , 0f },
+new List<float> { -9.848782f , -7.291109f , 0f },
+new List<float> { 14.56f , -1.46f , 90f },
+new List<float> { 1.805444f , 1.458705f , 0f },
+new List<float> { 1.302203f , 1.437216f , 0f },
+new List<float> { -1.18f , 1.458705f , 0f },
+new List<float> { 0.8186817f , 1.458705f , 0f },
+new List<float> { -9.914375f , 0.8001854f , 0f },
+new List<float> { -9.000361f , 0.78f , 0f },
+new List<float> { -9.464864f , 0.81f , 0f },
+new List<float> { -7.429819f , 0.7569201f , 0f },
+new List<float> { -8.49f , 0.77f , 0f },
+new List<float> { 17.04f , -5.02f , 180f },
+new List<float> { 17.79328f , -7.147311f , 0f },
+new List<float> { 7.9f , -4.34f , 0f },
+new List<float> { 16.82f , -1.44f , 270f },
+new List<float> { 1.12536f , 3.456136f , 90f },
+new List<float> { 0.3335209f , 1.437216f , 0f },
+new List<float> { -2.148682f , 1.458705f , 0f },
+new List<float> { -3.821917f , 4.589099f , 0f },
+new List<float> { -4.99f , 3.84f , 90f },
+new List<float> { -4.96f , 3.32f , 90f },
+new List<float> { -4.328343f , 4.589099f , 0f },
+new List<float> { 2.293443f , 4.205235f , 0f },
+new List<float> { 1.787017f , 4.205235f , 0f },
+new List<float> { 1.15536f , 2.936136f , 90f },
+new List<float> { -6.777172f , -7.314212f , 0f },
+new List<float> { -7.281935f , -7.31f , 0f },
+new List<float> { -6.246724f , -7.324613f , 0f },
+new List<float> { -0.15f , 1.458705f , 0f },
+new List<float> { -0.6964791f , 1.437216f , 0f },
+new List<float> { 19.69832f , 0.3814634f , 0f },
+new List<float> { 18.55f , -6.5f , 90f },
+new List<float> { 18.28083f , -7.147311f , 0f },
+new List<float> { 13.34757f , -7.06605f , 0f },
+                    },
+                 new List<List<float>>   //아이템 코드 (1)
+                    {
+                       new List<float> { -6.036118f , 0.95f , 0f },
+new List<float> { -5.085f , -2f , 0f },
+new List<float> { -20.11185f , -5.762678f , 0f },
+new List<float> { -8.769f , -4.077f , 0f },
+new List<float> { -10.55708f , -2f , 0f },
+new List<float> { -12.4464f , -1.972269f , 0f },
+new List<float> { -13.73f , 0.15f , 0f },
+new List<float> { 9.09f , -6.5f , 0f },
+new List<float> { 3.608835f , -3.502015f , 0f },
+new List<float> { -5.567373f , -4.219326f , 0f },
+new List<float> { 6.774042f , -5.01f , 0f },
+                    },
+                 new List<List<float>>   //아이템 코드 (2)
+                    {
+                       new List<float> { -0.55f , 4.08f , 0f },
+                    },
+                  new List<List<float>>   //아이템 코드 (3)
+                    {
+        new List<float> { -2.77f , 0.7456906f , 0f },
+new List<float> { -3.308281f , 0.7456906f , 0f },
+new List<float> { -1.671696f , 0.7456906f , 0f },
+new List<float> { 0.9565868f , 0.7456906f , 0f },
+new List<float> { 0.3871069f , 0.7456906f , 0f },
+new List<float> { -8.813144f , 0.0912599f , 0f },
+new List<float> { -7.689842f , 0.0912599f , 0f },
+new List<float> { -7.138593f , 0.0912599f , 0f },
+new List<float> { 15.60328f , -0.9693273f , 359.2929f },
+new List<float> { -2.217765f , 0.7456906f , 0f },
+new List<float> { -9.861876f , 0.0912599f , 0f },
+new List<float> { -10.37947f , 0.0912599f , 0f },
+new List<float> { -9.344282f , 0.0912599f , 0f },
+new List<float> { 13.89927f , -3.881887f , 179.2929f },
+new List<float> { 17.46927f , -4.301887f , 179.2929f },
+new List<float> { 17.32f , -3.77f , 359.2929f },
+new List<float> { 17.32f , -3.77f , 359.2929f },
+new List<float> { 13.75f , -3.35f , 359.2929f },
+new List<float> { 17.46927f , -4.301887f , 179.2929f },
+new List<float> { 15.75255f , -1.501214f , 179.2929f },
+new List<float> { 1.81536f , 2.997602f , 90f },
+new List<float> { -1.119461f , 0.7456906f , 0f },
+new List<float> { -3.77f , 3.53729f , 270f },
+new List<float> { -4.3f , 3.381467f , 90f },
+new List<float> { 2.34536f , 3.153426f , 270f },
+new List<float> { 1.472348f , 0.7456906f , 0f },
+new List<float> { -8.251493f , 0.0912599f , 0f },
+new List<float> { -0.62f , 0.7456906f , 0f },
+new List<float> { -0.12f , 0.7456906f , 0f },
+new List<float> { 19.77267f , -6.039351f , 270f },
+new List<float> { 19.36314f , -0.8704237f , 179.2929f },
+new List<float> { 19.24267f , -6.195175f , 90f },
+new List<float> { 8.653137f , 1.609576f , 179.2929f },
+new List<float> { 8.503868f , 2.141463f , 359.2929f },
+new List<float> { 19.21387f , -0.3385366f , 359.2929f },
+                    },
+                   new List<List<float>>   //아이템 코드 (4)
+                        {
+                        new List<float> { -12.488f , -1.213f , 0f },
+new List<float> { -13.04811f , 0.9543035f , 0f },
+new List<float> { -5.600762f , -3.451382f , 0f },
+new List<float> { 13.48155f , -2.577339f , 0f },
+new List<float> { -3.16f , -7.11f , 0f },
+new List<float> { 19.78f , -4.94f , 0f },
+new List<float> { 18.90771f , 0.4049f , 0f },
+                        },
+                    new List<List<float>>   //아이템 코드 (5)
+                    {
+                       new List<float> { -3.619f , -1.214033f , 0f },
+new List<float> { -18.41145f , -7.090771f , 0f },
+new List<float> { -2.925f , -1.214033f , 0f },
+                    },
+                   new List<List<float>>   //아이템 코드 (6)
+                    {
+                        new List<float> { -16.66f , -6.78f , 0f },
+new List<float> { -15.29f , -6.77f , 0f },
+new List<float> { -15.97f , -6.78f , 0f },
+new List<float> { 17.49f , -0.57f , 0f },
+new List<float> { 12.57f , -6.427065f , 0f },
+new List<float> { -0.62f , 2.28f , 0f },
+new List<float> { -1.91f , 1.76f , 0f },
+new List<float> { 13.03f , 1.73f , 0f },
+                    },
+                   new List<List<float>>   //아이템 코드 (7)
+                    {
+                       new List<float> { -2.839468f , -2f , 0f },
+new List<float> { -3.39887f , -2f , 0f },
+new List<float> { -3.950281f , -2f , 0f },
+new List<float> { -7.102f , -3f , 0f },
+new List<float> { -4.999762f , -4.22f , 0f },
+new List<float> { -1.23f , -2f , 0f },
+new List<float> { -1.742f , -2f , 0f },
+new List<float> { 0.4100001f , -2f , 0f },
+new List<float> { 0.98f , -2f , 0f },
+new List<float> { -9.349999f , -3f , 0f },
+new List<float> { -9.874f , -3f , 0f },
+new List<float> { -4.517674f , -2f , 0f },
+new List<float> { -0.68f , -2f , 0f },
+new List<float> { -8.225705f , -3f , 0f },
+new List<float> { -8.202f , -4.077f , 0f },
+new List<float> { -7.658311f , -3f , 0f },
+new List<float> { -8.793098f , -3f , 0f },
+new List<float> { 9.647979f , -6.5f , 0f },
+new List<float> { 7.332021f , -5.01f , 0f },
+new List<float> { 1.55f , -2f , 0f },
+new List<float> { -0.1399999f , -2f , 0f },
+new List<float> { -2.302f , -2f , 0f },
+new List<float> { 4.166814f , -3.502015f , 0f },
+                    },
+                   new List<List<float>>   //아이템 코드 (8)
+                    {
+                       new List<float> { -19.56f , -5.762678f , 0f },
+new List<float> { -10f , -2f , 0f },
+new List<float> { -11.88475f , -1.972269f , 0f },
+new List<float> { -13.18f , 0.15f , 0f },
+new List<float> { -4.45f , -4.219326f , 0f },
+new List<float> { -6.535f , -3f , 0f },
+new List<float> { -7.634f , -4.077f , 0f },
+new List<float> { 7.89f , -5.01f , 0f },
+new List<float> { 4.724793f , -3.502015f , 0f },
+new List<float> { 2.08f , -2f , 0f },
+new List<float> { 10.20596f , -6.5f , 0f },
+new List<float> { -5.48f , 0.95f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (9)
+                    {
+new List<float> { -4.954388f , -0.002347988f , 0f },
+new List<float> { -3.861505f , 0.7456906f , 0f },
+new List<float> { 16.93672f , -4.310673f , 89.29298f },
+new List<float> { -10.90043f , 0.0912599f , 0f },
+new List<float> { 14.26265f , -3.901729f , 179.2929f },
+new List<float> { 17.83265f , -4.321729f , 179.2929f },
+new List<float> { 16.93672f , -4.310673f , 89.29298f },
+new List<float> { 16.11592f , -1.521057f , 179.2929f },
+new List<float> { 15.22f , -1.51f , 89.29298f },
+new List<float> { 17.83265f , -4.321729f , 179.2929f },
+new List<float> { 1.8f , 2.634014f , 90f },
+new List<float> { -4.31536f , 3.017878f , 90f },
+new List<float> { -4.31536f , 3.913864f , 0f },
+new List<float> { 1.8f , 3.53f , 0f },
+new List<float> { 19.22731f , -5.662777f , 0f },
+new List<float> { 19.72652f , -0.8902658f , 179.2929f },
+new List<float> { 18.83059f , -0.8792094f , 89.29298f },
+new List<float> { 19.22731f , -6.558763f , 90f },
+new List<float> { 8.12059f , 1.60079f , 89.29298f },
+new List<float> { 9.016516f , 1.589734f , 179.2929f },
+new List<float> { 13.36672f , -3.890673f , 89.29298f },
+new List<float> { 15.61956f , -7.342713f , 0f },
+new List<float> { 10.87966f , -7.338873f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (10)
+                    {
+new List<float> { -6.618546f , 0.0912599f , 0f },
+new List<float> { -4.42f , -0.002347988f , 0f },
+new List<float> { 11.42f , -7.38f , 0f },
+new List<float> { 14.26727f , -3.356396f , 359.2929f },
+new List<float> { 16.15989f , -7.371921f , 0f },
+new List<float> { 15.23941f , -0.9907907f , 89.29298f },
+new List<float> { 13.38613f , -3.371463f , 89.29298f },
+new List<float> { 16.95613f , -3.791463f , 89.29298f },
+new List<float> { 16.95613f , -3.791463f , 89.29298f },
+new List<float> { 16.12055f , -0.9757236f , 359.2929f },
+new List<float> { -3.795948f , 3.900879f , 0f },
+new List<float> { -3.77f , 3.02f , 270f },
+new List<float> { 2.319412f , 3.517015f , 0f },
+new List<float> { 2.34536f , 2.636136f , 270f },
+new List<float> { 1.988107f , 0.7456906f , 0f },
+new List<float> { 19.74672f , -5.675763f , 0f },
+new List<float> { 17.83727f , -3.776396f , 359.2929f },
+new List<float> { 17.83727f , -3.776396f , 359.2929f },
+new List<float> { 19.73114f , -0.3449329f , 359.2929f },
+new List<float> { 19.77267f , -6.556641f , 270f },
+new List<float> { 9.021139f , 2.135067f , 359.2929f },
+new List<float> { 8.14f , 2.12f , 89.29298f },
+new List<float> { 18.85f , -0.36f , 89.29298f },
+                    },
+                    new List<List<float>>   //아이템 코드 (11)
+                    {
+                        new List<float> { 0.5062591f , -7.043858f , 0f },
+new List<float> { -8.097841f , -3.293935f , 0f },
+new List<float> { 7.204319f , -7.043859f , 0f },
+new List<float> { 3.778226f , -7.089377f , 0f },
+new List<float> { 1.94615f , -7.089377f , 0f },
+new List<float> { 5.473578f , -7.116721f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (12)
+                    {
+                       new List<float> { -9.69f , 1.15f , 0f },
+new List<float> { 11f , 1.68f , 0f },
+new List<float> { 16.59864f , 1.746405f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (13)
+                    {
+new List<float> { -17.75577f , -7.348883f , 0f },
+new List<float> { 1.6f , -1.47f , 0f },
+new List<float> { -4.79f , -1.482f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (14)
+                    {
+                       new List<float> { -1.2f , -1.39f , 0f },
+new List<float> { -17.86f , -0.16f , 0f },
+new List<float> { 14.9f , -6.65f , 0f },
+new List<float> { 14.02f , -6.4f , 0f },
+                    },
+                    new List<List<float>>   //아이템 코드 (15)
+                    {
+new List<float> { 8.200314f , 2.90573f , 0f },
+                    },
+            },
+             new List<List<List<float>>>  //배열 스테이지 (2)
+            {
+                new List<List<float>>   //아이템 코드 (0)
+                    {
+                        new List<float> { -17.92f, -7.16f, 0f },
+                        new List<float> { -0.9f, -6f, 0f },//X, Y좌표 [1][1][0][0][0, 1]
+                        new List<float> { 14.67f, -7.16f, 0f },
+                        new List<float> { 15.19f, -7.16f, 0f },
+                        new List<float> { 15.74f, -7.16f, 0f },
+                        new List<float> { 16.3f, -7.16f, 0f },
+                        new List<float> { 16.8f, -7.16f, 0f },
+                        new List<float> { 17.32f, -7.16f, 0f },
+                        new List<float> { 17.87f, -7.16f, 0f },
+                    },
+                 new List<List<float>>   //아이템 코드 (1)
+                    {
+                        new List<float> { 6.2f, -6.25f, 0f }, //X, Y좌표
+                    },
+                 new List<List<float>>   //아이템 코드 (2)
+                    {
+                        new List<float> { -11.44f, -6f, 0f }, //X, Y좌표
+                    },
+                  new List<List<float>>   //아이템 코드 (3)
+                    {
+                        new List<float> { -4f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { -3.45f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { -2.9f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { -2.35f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { -1.26f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { -1.81f, -6.6f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (4)
+                    {
+                        new List<float> { -5.67f, -7.16f, 0f }, //X, Y좌표
+                        new List<float> { 0.7f, -7.16f, 0f }, //X, Y좌표
+                        new List<float> { 2.34f, -5.76f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (5)
+                    {
+                        new List<float> { -15f, -7.1f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (6)
+                    {
+                        new List<float> { 2.33f, -6.36f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (7)
+                    {
+                        new List<float> { 6.74f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 7.24f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 7.8f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 8.3f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 8.87f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 9.38f, -6.25f ,0f}, //X, Y좌표
+                        new List<float> { 9.91f, -6.25f, 0f }, //X, Y좌표
+                        new List<float> { 10.4f, -6.25f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (8)
+                    {
+                        new List<float> { 11f, -6.25f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (9)
+                    {
+                        new List<float> { -4.52f, -6.6f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (10)
+                    {
+                        new List<float> { -0.74f, -6.65f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (11)
+                    {
+                        new List<float> { -8f, -7.09f, 0f }, //X, Y좌표
+                        new List<float> { -3f, -7.09f, 0f }, //X, Y좌표
+                        new List<float> { 7.29f, -7.09f, 0f }, //X, Y좌표
+                        new List<float> { 9.7f, -7.09f, 0f }, //X, Y좌표
+                        new List<float> { 12.76f, -7.09f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (12)
+                    {
+                        new List<float> { -11.42f, -6.6f, 0f }, //X, Y좌표
+                        new List<float> { 17f, -6.4f, 0f }, //X, Y좌표
+                        new List<float> { 17.58f, -6.4f, 0f }, //X, Y좌표
+                        new List<float> { 18.11f, -6.4f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (13)
+                    {
+                        new List<float> { -3.9f, -6.1f, 0f }, //X, Y좌표
+                        new List<float> { -2.48f, -6.1f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (14)
+                    {
+                        new List<float> { -12.52f, -7.1f, 0f }, //X, Y좌표
+                        new List<float> { 8.8f, -5f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (15)
+                    {
+                        new List<float> { 19.34f, -7.1f, 0f }, //X, Y좌표
+                    },
+            },
+            new List<List<List<float>>>  //배열 스테이지 (3)
+            {
+                new List<List<float>>   //아이템 코드 (0)
+                    {
+                    },
+                 new List<List<float>>   //아이템 코드 (1)
+                    {
+                        new List<float> { -15.7f, -6f, 0f }, //X, Y좌표
+                    },
+                 new List<List<float>>   //아이템 코드 (2)
+                    {
+                        new List<float> { -5.9f, -7.16f, 0f }, //X, Y좌표
+                    },
+                  new List<List<float>>   //아이템 코드 (3)
+                    {
+                    },
+                   new List<List<float>>   //아이템 코드 (4)
+                    {
+                        new List<float> { -0.85f, -7.16f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (5)
+                    {
+                        new List<float> { -17.5f, -7.16f, 0f }, //X, Y좌표
+                        new List<float> { -7.36f, -7.16f, 0f }, //X, Y좌표
+                        new List<float> { 8.46f, -7.16f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (6)
+                    {
+                        new List<float> { 10.41f, -7.25f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (7)
+                    {
+                        new List<float> { -15.13f, -6f, 0f }, //X, Y좌표
+                        new List<float> { -14.56f, -6f, 0f }, //X, Y좌표
+                        new List<float> { -14.03f, -6f, 0f }, //X, Y좌표
+                    },
+                   new List<List<float>>   //아이템 코드 (8)
+                    {
+                        new List<float> { -13.5f, -6f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (9)
+                    {
+                    },
+                    new List<List<float>>   //아이템 코드 (10)
+                    {
+                    },
+                    new List<List<float>>   //아이템 코드 (11)
+                    {
+                        new List<float> { -10.4f, -7.16f, 0f }, //X, Y좌표
+                        new List<float> { 5.16f, -7.16f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (12)
+                    {
+                        new List<float> { 3.3f, -6.73f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (13)
+                    {
+                    },
+                    new List<List<float>>   //아이템 코드 (14)
+                    {
+                        new List<float> { -14.21f, -7.2f, 0f }, //X, Y좌표
+                        new List<float> { -3.88f, -7.2f, 0f }, //X, Y좌표
+                        new List<float> { 1.4f, -7.2f, 0f }, //X, Y좌표
+                        new List<float> { 11.54f, -7.2f, 0f }, //X, Y좌표
+                        new List<float> { 14.6f, -7.2f, 0f }, //X, Y좌표
+                        new List<float> { 17.7f, -7.2f, 0f }, //X, Y좌표
+                    },
+                    new List<List<float>>   //아이템 코드 (15)
+                    {
+                        new List<float> { 19.73f, -7.1f, 0f }, //X, Y좌표
+                    },
+            }
+        }
     };
     //첫번째 배열 별자리, 두번째 배열 스테이지
     //세번째 배열 0 가시, 1 왼잔디, 2 별자리 파편, 3 돌, 4 빨간 버섯, 5 잎, 6 박스, 7 중간잔디, 8오잔디, 9왼돌 10오돌, 11 썩은 버섯, 12 흙, 13 잘린 나무, 14 몬스터, 15도착지점  //네번째 배열은 좌표를 담습니다 으으살려주세요
