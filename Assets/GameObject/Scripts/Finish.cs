@@ -16,9 +16,11 @@ public class Finish : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (finishis) return;
+
         if(collision.CompareTag("Player"))
         {
             finishis = true;
+            MenuManager.clearData[MenuManager.starSet - 1, MenuManager.starNum - 1] = 1;
             StartCoroutine(Fade.FadeOut(0.5f));
             if (MenuManager.starNum >= 3) Invoke("GoMain", 2f);
             else Invoke("ReGame", 2f);

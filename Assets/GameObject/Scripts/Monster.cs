@@ -65,7 +65,7 @@ public class Monster : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && rb.velocity.y < 0f)
+        if (collision.CompareTag("Player") && rb.velocity.y < -1f)
         {
             Debug.Log(rb.velocity.y);
             killed = true;
@@ -75,6 +75,12 @@ public class Monster : MonoBehaviour
         {
             SceneManager.LoadScene("Main");
         }
-        
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player") && !killed && !itemInfo.grass)
+        {
+            SceneManager.LoadScene("Main");
+        }
     }
 }

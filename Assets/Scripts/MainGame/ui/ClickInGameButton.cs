@@ -26,13 +26,12 @@ public class ClickInGameButton : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (isStop && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))) ClickStopButton();
+        if (isStop && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Space))) ClickStopButton(); 
         Menu.SetActive(isStop);
     }
     // Update is called once per frame
     public void ClickStopButton()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) return;
         if (isStop)
         {
             isStop = false;

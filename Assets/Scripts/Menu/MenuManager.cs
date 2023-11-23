@@ -7,10 +7,10 @@ public class MenuManager : MonoBehaviour
     private bool clickOkayButton = false, clickCancelButton = false, menuBackButton = false, startClickButton = false;
     public Button okayButton, cancelButton, startButton, backButton;
     // Start is called before the first frame update
-    public static int starNum = 1;
-    public static int starSet = 5;
+    public static int starNum = 3;
+    public static int starSet = 4;
     public static int pendants = 0;
-    public static int[,] clearData = new int[5, 3] { { 1, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+    public static int[,] clearData = new int[5, 3] { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
     public static int[,] fragNum = new int[5, 3];
     public GameObject starSetUI, uiSet, starSelUI, uiSel;
     void Start()
