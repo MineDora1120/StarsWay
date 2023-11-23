@@ -7,6 +7,6 @@ public class item_0 : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) SceneManager.LoadScene("Main");
+        if (collision.CompareTag("Player")) MainGameManager.HP--;
     }
 }

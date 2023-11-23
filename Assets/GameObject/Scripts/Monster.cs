@@ -50,7 +50,7 @@ public class Monster : MonoBehaviour
     }
    public IEnumerator FadeIn(float delayTime)
     {
-        monsterAnime.enabled = false;
+        monsterAnime.enabled = true;
         yield return new WaitForSeconds(delayTime);
         for (float i = 1f; i > 0; i -= Time.deltaTime)
         {
@@ -73,14 +73,14 @@ public class Monster : MonoBehaviour
         }
         else if (collision.CompareTag("Player") && !killed && !itemInfo.grass)
         {
-            SceneManager.LoadScene("Main");
+            MainGameManager.HP--;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !killed && !itemInfo.grass)
         {
-            SceneManager.LoadScene("Main");
+            MainGameManager.HP--;
         }
     }
 }
