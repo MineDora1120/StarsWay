@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 0.1
-  StarChange: 0.01
+  StarChange: 0.05
   Background: {fileID: 565431661}
   Stars: {fileID: 1396453120}
 --- !u!4 &292946775
