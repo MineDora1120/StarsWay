@@ -9,12 +9,16 @@ public class MainGameManager : MonoBehaviour
     int maxHP, latestHP;
     public static int HP;
     public Text messageText;
+    public Image pendantsImage;
+    public Sprite[] pendantsSprite;
     public GameObject player;
     private Color messageColor;
     private Rigidbody2D rb;
     bool isProtect = false;
     void Start()
     {
+        if(MenuManager.pendants != 0) pendantsImage.sprite = pendantsSprite[MenuManager.pendants - 1];
+        else pendantsImage.enabled = false;
         rb = player.GetComponent<Rigidbody2D>();
         if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.mass = 0.95f;
         else rb.mass = 1.0f;
