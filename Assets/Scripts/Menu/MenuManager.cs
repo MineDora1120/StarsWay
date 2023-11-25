@@ -15,6 +15,10 @@ public class MenuManager : MonoBehaviour
     public GameObject starSetUI, uiSet, starSelUI, uiSel;
     void Start()
     {
+        for(int i = 0; i < 3; i++)
+        {
+            fragNum[0, i] = 1;
+        }
         clickOkayButton = false;
         clickCancelButton = false;
         menuBackButton = false;

@@ -20,8 +20,10 @@ public class MainGameManager : MonoBehaviour
         if(MenuManager.pendants != 0) pendantsImage.sprite = pendantsSprite[MenuManager.pendants - 1];
         else pendantsImage.enabled = false;
         rb = player.GetComponent<Rigidbody2D>();
-        if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.mass = 0.94f;
-        else rb.mass = 0.99f;
+
+        rb.mass = 1f;
+        if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.gravityScale = 0.9f;
+        else rb.gravityScale = 1f;
 
         if (MenuManager.pendants == 2 || MenuManager.pendants == 5) MovePlayer.moveSpeed = 7f;
         else MovePlayer.moveSpeed = 5f;
