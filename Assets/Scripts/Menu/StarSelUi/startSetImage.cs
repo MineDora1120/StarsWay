@@ -4,7 +4,7 @@ using UnityEngine;
 public class startSetImage : MonoBehaviour
 {
     [SerializeField] Sprite[] setSprite;
-    [SerializeField] GameObject setObject;
+    [SerializeField] GameObject setObject, charactorObj;
     [SerializeField] GameObject[] starObj;
     private SpriteRenderer[] spriteRenderObj = new SpriteRenderer[3];
     private SpriteRenderer setRenderer;
@@ -43,8 +43,10 @@ public class startSetImage : MonoBehaviour
             for (int i = 0; i < 3; i++)
             {
                 starObj[i].transform.position = new Vector2(starSpritePosition[MenuManager.starSet - 1, i, 0], starSpritePosition[MenuManager.starSet - 1, i, 1]);
-                if (i + 1 == MenuManager.starNum) spriteRenderObj[i].color = Color.green;
+                if (i + 1 == MenuManager.starNum) spriteRenderObj[i].color = Color.yellow;
+                else if (MenuManager.clearData[MenuManager.starSet - 1, i] == 1) spriteRenderObj[i].color = Color.green;
                 else spriteRenderObj[i].color = Color.white;
+                charactorObj.transform.position = new Vector3(starSpritePosition[MenuManager.starSet - 1, MenuManager.starNum - 1, 0] + 0.05f, starSpritePosition[MenuManager.starSet - 1, MenuManager.starNum - 1, 1], 5f);
             }
 
             setRenderer.sprite = setSprite[MenuManager.starSet - 1];
