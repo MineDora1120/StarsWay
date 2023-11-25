@@ -63,6 +63,9 @@ public class MainGameManager : MonoBehaviour
                 StartCoroutine(FadeIn(0f));
                 latestHP = HP;
             }
+        } else
+        {
+            if (HP <= 0) SceneManager.LoadScene("Main");
         }
     }
 

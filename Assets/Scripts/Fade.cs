@@ -19,13 +19,15 @@ public class Fade : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
         BlackScreenColor.a = 0;     
-        for (float i = 0; i < 1f; i += Time.deltaTime)
+        for (float i = 0; i <= 1f; i += Time.deltaTime)
         {
             BlackScreenRenderer.enabled = true;
             BlackScreenColor.a = i;
             BlackScreenRenderer.color = BlackScreenColor;
             yield return new WaitForSeconds(0.01f);
         }
+        BlackScreenColor.a = 1f;
+        BlackScreenRenderer.color = BlackScreenColor;
     }
     static public IEnumerator FadeIn(float delayTime)
     {
@@ -37,6 +39,8 @@ public class Fade : MonoBehaviour
             BlackScreenRenderer.color = BlackScreenColor;
             yield return new WaitForSeconds(0.01f);
         }
+        BlackScreenColor.a = 0f;
+        BlackScreenRenderer.color = BlackScreenColor;
         BlackScreenRenderer.enabled = false;
     }
 
