@@ -21,6 +21,7 @@ public class Finish : MonoBehaviour
         {
             finishis = true;
             MenuManager.clearData[MenuManager.starSet - 1, MenuManager.starNum - 1] = 1;
+            if(MainGameManager.pendantsGetTo) MenuManager.fragNum[MenuManager.starSet - 1, MenuManager.starNum - 1] = 1;
             StartCoroutine(Fade.FadeOut(0.5f));
             if (MenuManager.starNum >= 3) Invoke("GoMain", 2f);
             else Invoke("ReGame", 2f);

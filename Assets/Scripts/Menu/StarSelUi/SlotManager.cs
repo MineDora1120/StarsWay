@@ -27,7 +27,7 @@ public class SlotManager : MonoBehaviour
         pendantSlot.SetActive(clickPendantSlot);
         if(clickPendantSlot)
         {
-            originX = -6.58f;
+            originX = -6.4f;
             
             for(int j = 0; j < 5; j++)
             {

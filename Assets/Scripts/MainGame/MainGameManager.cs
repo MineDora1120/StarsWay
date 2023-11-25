@@ -14,19 +14,21 @@ public class MainGameManager : MonoBehaviour
     public GameObject player;
     private Color messageColor;
     private Rigidbody2D rb;
+    public static bool pendantsGetTo;
     bool isProtect = false;
     void Start()
     {
+        pendantsGetTo = false;
         if(MenuManager.pendants != 0) pendantsImage.sprite = pendantsSprite[MenuManager.pendants - 1];
         else pendantsImage.enabled = false;
         rb = player.GetComponent<Rigidbody2D>();
 
         rb.mass = 1f;
-        if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.gravityScale = 0.9f;
+        if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.gravityScale = 0.8f;
         else rb.gravityScale = 1f;
 
         if (MenuManager.pendants == 2 || MenuManager.pendants == 5) MovePlayer.moveSpeed = 7f;
-        else MovePlayer.moveSpeed = 5f;
+        else MovePlayer.moveSpeed = 5.5f;
 
         isProtect = false;
         messageText.enabled = false;
