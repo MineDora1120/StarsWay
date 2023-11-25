@@ -100,7 +100,7 @@ public class MenuManager : MonoBehaviour
     void UIFour()
     {
         menuBackButton = false;
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("LoadingScene");
     }
     // Update is called once per frame
     void Update()

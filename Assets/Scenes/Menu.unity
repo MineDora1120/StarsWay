@@ -221,7 +221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 125.35, y: 20.17}
+  m_AnchoredPosition: {x: 125.349976, y: 20.169983}
   m_SizeDelta: {x: 244.92, y: 40.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334922452
@@ -625,7 +625,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005673626}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
