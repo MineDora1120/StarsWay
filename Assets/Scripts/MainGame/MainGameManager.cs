@@ -44,12 +44,14 @@ public class MainGameManager : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        Debug.Log(HP);
+        Debug.Log(latestHP);
         if (isProtect)
         {
             HP = latestHP;
             return;
         }
-
+        if(Mathf.Abs(latestHP - HP) > 1) HP = latestHP;
         if (HP <= 0) SceneManager.LoadScene("Main");
         else if ((HP != latestHP) && !isProtect)
         {

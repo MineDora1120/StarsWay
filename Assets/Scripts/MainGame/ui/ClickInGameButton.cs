@@ -11,7 +11,8 @@ public class ClickInGameButton : MonoBehaviour
     public Text levelText;
     public Image stopButtonImage;
     public Sprite playImage, stopImage;
-    private bool isStop = false, isReButton, isMenuButton;
+    public static bool isStop = false;
+    private bool isReButton, isMenuButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class ClickInGameButton : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (isStop && (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.Space))) ClickStopButton(); 
+        if (isStop && (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.Space))) ClickStopButton(); 
         Menu.SetActive(isStop);
     }
     // Update is called once per frame
