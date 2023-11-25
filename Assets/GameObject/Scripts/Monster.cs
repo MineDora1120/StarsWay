@@ -31,6 +31,7 @@ public class Monster : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if (ClickInGameButton.isStop) return;
          if(timer > 0.1f && !killed)
         {
             timer = 0;
@@ -67,7 +68,6 @@ public class Monster : MonoBehaviour
     {
         if (collision.CompareTag("Player") && rb.velocity.y < -1f)
         {
-            Debug.Log(rb.velocity.y);
             killed = true;
             StartCoroutine(FadeIn(0f));
         }
