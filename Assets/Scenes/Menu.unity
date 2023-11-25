@@ -221,8 +221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 125.79999, y: 10.619995}
-  m_SizeDelta: {x: 244.01, y: 21.24}
+  m_AnchoredPosition: {x: 125.35, y: 20.17}
+  m_SizeDelta: {x: 244.92, y: 40.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &334922452
 MonoBehaviour:
@@ -257,7 +257,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'BGM: A_HISA - Narclssus'
+  m_Text: "\uAE30\uD68D: \uC774\uC900\uC11C, \uCD1D\uAD04: \uC774\uB3C4\uACBD\nBGM:
+    A_HISA - Narclssus"
 --- !u!222 &334922453
 CanvasRenderer:
   m_ObjectHideFlags: 0
