@@ -21,7 +21,7 @@ public class LoadManager : MonoBehaviour
         while (!(oper.progress >= 0.99f))
         {
             slider.value += oper.progress;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.01f);
         }
     }
 }

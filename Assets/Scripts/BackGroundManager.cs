@@ -5,10 +5,11 @@ using UnityEngine;
 public class BackGroundManager : MonoBehaviour
 {
     private int Background_x = 1, Background_y = 1;
-    public float MoveSpeed = 0.5f, StarChange = 0.1f;
-    public GameObject Background, Stars;
-    SpriteRenderer StarRender;
-    Color StarColor;
+    [SerializeField] float MoveSpeed = 0.5f, StarChange = 0.1f;
+    [SerializeField] bool colorChange = false;
+    [SerializeField] GameObject Background, Stars;
+    SpriteRenderer StarRender, bgRenderer;
+    Color StarColor, startColor, endColor;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,14 @@ public class BackGroundManager : MonoBehaviour
        StarRender.color = StarColor;
 
        StartCoroutine(Invision());
+
+        if(colorChange)
+        {
+            startColor = Color.green;
+            endColor = Color.blue;
+            bgRenderer = Background.GetComponent<SpriteRenderer>();
+            StartCoroutine(ContinuousColorChangeCoroutine());
+        }
     }
 
     // Update is called once per frame
@@ -59,5 +68,30 @@ public class BackGroundManager : MonoBehaviour
 
             yield return new WaitForSeconds(1f);
         }
+    }
+    IEnumerator ContinuousColorChangeCoroutine()
+    {
+        while (true)
+        {
+            float t = 0f;
+
+            while (t < 10f)
+            {
+                t += Time.deltaTime;
+                bgRenderer.color = Color.Lerp(startColor, endColor, t);
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(1f); // 변경된 색상을 유지한 후 1초 대기
+            SwapColors(); // 색상 변경
+        }
+    }
+
+    void SwapColors()
+    {
+        // 시작 색상과 끝 색상을 교환
+        Color temp = startColor;
+        startColor = endColor;
+        endColor = temp;
     }
 }
