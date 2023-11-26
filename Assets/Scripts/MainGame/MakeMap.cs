@@ -119,7 +119,7 @@ public class MakeMap : MonoBehaviour
                     },
             };
         }
-        else if (sNum == 1 && sSet == 2)
+        else if (sNum == 2 && sSet == 1)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -220,7 +220,7 @@ public class MakeMap : MonoBehaviour
                     }
             };
         }
-        else if (sNum == 1 && sSet == 3)
+        else if (sNum == 3 && sSet == 1)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -295,7 +295,7 @@ public class MakeMap : MonoBehaviour
                     }
             };
         }
-        else if (sNum == 2 && sSet == 1)
+        else if (sNum == 1 && sSet == 2)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -491,7 +491,7 @@ public class MakeMap : MonoBehaviour
                     }
             };
         }
-        else if (sNum == 2 && sSet == 3)
+        else if (sNum == 3 && sSet == 2)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -593,7 +593,7 @@ public class MakeMap : MonoBehaviour
                     },
             };
         }
-        else if (sNum == 3 && sSet == 1)
+        else if (sNum == 1 && sSet == 3)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -701,7 +701,7 @@ public class MakeMap : MonoBehaviour
                     }
             };
         }
-        else if (sNum == 3 && sSet == 2)
+        else if (sNum == 2 && sSet == 3)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -917,7 +917,7 @@ public class MakeMap : MonoBehaviour
                     },
             };
         }
-        else if (sNum == 4 && sSet == 1)
+        else if (sNum == 1 && sSet == 4)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -959,8 +959,6 @@ public class MakeMap : MonoBehaviour
         new List<float> { 4.41f , -4.88f , 90f },
         new List<float> { 7.596337f , 0.32f , 0f },
         new List<float> { 6.188051f , -7.138558f , 0f },
-
-
 
                     },
                  new List<List<float>>   //아이템 코드 (1)
@@ -1310,7 +1308,7 @@ public class MakeMap : MonoBehaviour
                     },
             };
         }
-        else if (sNum == 4 && sSet == 2)
+        else if (sNum == 2 && sSet == 4)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -2412,7 +2410,7 @@ new List<float> { 1.204f , 15.88301f , 0f },
 }
             };
         }
-        else if (sNum == 4 && sSet == 3)
+        else if (sNum == 3 && sSet == 4)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -3399,6 +3397,7 @@ new List<float> { 5.085f , -2.394724f , 0f },
                     },
                     new List<List<float>>   //아이템 코드 (13)
                     {
+
                     },
                     new List<List<float>>   //아이템 코드 (14)
                     {
@@ -3412,7 +3411,7 @@ new List<float> { 5.085f , -2.394724f , 0f },
                     }
             };
         }
-        else if (sNum == 5 && sSet == 1)
+        else if (sNum == 1 && sSet == 5)
         {
             mapData = new List<List<List<float>>>()
             {
@@ -3680,14 +3679,14 @@ new List<float> { 8.200314f , 2.90573f , 0f },
                     },
             };
         }
-        else if (sNum == 5 && sSet == 2)
+        else if (sNum == 2 && sSet == 5)
         {
             mapData = new List<List<List<float>>>()
             {
 
             };
         }
-        else if (sNum == 5 && sSet == 3)
+        else if (sNum == 3 && sSet == 5)
         {
             mapData = new List<List<List<float>>>()
             {
