@@ -42,9 +42,10 @@ public class startSetImage : MonoBehaviour
         {
             spriteRenderObj[i] = starObj[i].GetComponent<SpriteRenderer>();
         }
+        StartCoroutine(ChangeImage());
     }
 
-    void FixedUpdate()
+    IEnumerator ChangeImage()
     {
         while (true)
         {
@@ -66,6 +67,7 @@ public class startSetImage : MonoBehaviour
             setRenderer.sprite = setSprite[MenuManager.starSet - 1];
             setObject.transform.localScale = new Vector3(spritePosition[MenuManager.starSet - 1, 2], spritePosition[MenuManager.starSet - 1, 3], spritePosition[MenuManager.starSet - 1, 4]);
             setObject.transform.position = new Vector3(spritePosition[MenuManager.starSet - 1, 0], spritePosition[MenuManager.starSet - 1, 1], 5);
+            yield return new WaitForSeconds(0.1f);
         }
     }
 }

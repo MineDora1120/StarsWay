@@ -35,7 +35,7 @@ public class Finish : MonoBehaviour
     void GoMain()
     {
         MenuManager.starNum = 1;
-        MenuManager.starSet++;
+        if(MenuManager.starSet <= 5)MenuManager.starSet++;
         SceneManager.LoadScene("Select");
     }
 }

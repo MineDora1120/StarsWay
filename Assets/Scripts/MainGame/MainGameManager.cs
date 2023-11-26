@@ -23,12 +23,12 @@ public class MainGameManager : MonoBehaviour
         else pendantsImage.enabled = false;
         rb = player.GetComponent<Rigidbody2D>();
 
-        rb.mass = 1f;
+        rb.mass = 0.99f;
         if (MenuManager.pendants == 1 || MenuManager.pendants == 5) rb.gravityScale = 0.8f;
-        else rb.gravityScale = 1f;
+        else rb.gravityScale = 0.9f;
 
-        if (MenuManager.pendants == 2 || MenuManager.pendants == 5) MovePlayer.moveSpeed = 7f;
-        else MovePlayer.moveSpeed = 5.5f;
+        if (MenuManager.pendants == 2 || MenuManager.pendants == 5) MovePlayer.moveSpeed = 5.7f;
+        else MovePlayer.moveSpeed = 4.8f;
 
         isProtect = false;
         messageText.enabled = false;

@@ -7,7 +7,7 @@ public class TextChange : MonoBehaviour
 {
     public Text firstText, selectTextNotice, selectText, infoText;
     private string[] starName = new string[5] { "쌍둥이자리", "양자리", "천칭자리", "북두칠성", "카시오페아자리" };
-    private string[,] starNote = new string[,] { { "1-1", "1-2", "1-3" }, { "2-1", "2-2", "2-3" }, { "3-1", "3-2", "3-3" }, { "4-1", "4-2", "4-3" }, { "5-1", "5-2", "5-3" } };
+    private string[,] starNote = new string[,] { { "가장 기본이 되는 행성.", "새로운 생명체가 존재하는 행성.", "대도시 같은 행성." }, { "신비로운 외계 블록을 활용하는 행성", "..? 지금 나를 공격하는건가?", "신기한게 많은 고대행성" }, { "오르막길이 있는 행성??", "모험할 맛이 나는 행성!", "고대 기믹 행성..?" }, { "혁신적인 행성..!", "보호장치가 잘되어있는 행성!", "심심할때 오면 재미질거같은 행성!" }, { "뒤죽박죽 어지러운 행성", "많이 힘든 행성", "쉬어가는 행성. 모두 수고하셨습니다!" } };
     private char[] starOneName = new char[5] { '쌍', '양', '천', '북', '카' };
     private string[] pendantsInfo = new string[5] {"둥실", "속력", "구일", "스몰", "혼합"};
     private int overNum = 0, pendantNum;
